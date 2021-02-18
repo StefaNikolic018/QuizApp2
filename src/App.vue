@@ -1,12 +1,31 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">Start</router-link>
     </div>
+    <Header />
     <router-view />
   </div>
 </template>
+
+<script>
+import Header from "./components/Header";
+import { mapActions } from "vuex";
+export default {
+  components: {
+    Header
+  },
+
+  computed: {
+    ...mapActions(["fetchQuestions", "shuffleAnswers", "currentQuestionAction"])
+  },
+  created() {
+    this.fetchQuestions;
+    // this.currentQuestionAction;
+    // this.shuffleAnswers;
+  }
+};
+</script>
 
 <style lang="scss">
 #app {
