@@ -40,9 +40,10 @@ export default {
   submitAnswer({ commit }) {
     commit("setSubmittedAnswer");
   },
-  finished({ commit }, p) {
+  async finished({ commit }, p) {
     commit("setSubmit");
     commit("setSelectedIndex", null);
-    commit("setPercentage", p);
+    await commit("setPercentage", p);
+    
   }
 };

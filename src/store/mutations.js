@@ -64,8 +64,9 @@ export default {
   setQuestionsLength(state) {
     state.questionsLength = 0;
   },
-  setPercentage(state, p) {
+  async setPercentage(state, p) {
     state.percentage = p;
+    return
   },
   newStart(state) {
     state.correctNum = 0;
