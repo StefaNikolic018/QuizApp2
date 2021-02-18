@@ -20,7 +20,7 @@ export default {
     ...mapActions(["fetchQuestions", "shuffleAnswers", "currentQuestionAction"])
   },
   created() {
-    this.fetchQuestions;
+    // this.fetchQuestions;
     // this.currentQuestionAction;
     // this.shuffleAnswers;
   }

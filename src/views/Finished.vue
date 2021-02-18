@@ -66,7 +66,6 @@
       <b-button
         class="mt-3 shadow-lg"
         variant="primary"
-        @click="fetchQuestions"
       >
         <router-link to="/" class="text-light">Try again</router-link>
       </b-button>

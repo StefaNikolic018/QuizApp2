@@ -89,7 +89,7 @@ export default {
     ])
   },
   mounted: function() {
-    this.fetchQuestions;
+    this.fetchQuestions();
     // this.currentQuestionAction(this.index);
     // this.currentQuestion = this.getAllQuestions[this.index];
     // this.shuffleAnswers;
